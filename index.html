@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"> -->
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/temas.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>WebApp</title>
+</head>
+<body>
+
+
+<!-- Página de Inicio -->
+	<!-- 	div[data-role="page"]>div[data-role=""]*3 (Asi se resume para poder empezar con la pagina-->
+
+<div id="inicio" data-theme="b" data-role="page" data-title="inicio"> <!-- data-role Es un atributo -->
+	<div data-role="header">
+		<a href="#panel" data-role="button" class="ui-btn-right">Menú</a>
+		<h1>Primera App Interfaz</h1>
+	</div>
+	<div data-role="content">
+
+	<!-- Panel de control (MENU) -->
+
+		<div data-role="panel" data-display="overlay" id="panel" data-position="right">
+			
+			<h3>Menú</h3>
+
+			<ul data-role="listview">
+				<li><a data-transition="pop" href="#uno">paginas1</a></li>
+				<li><a data-transition="pop" href="#dos">paginas2</a></li>
+				<li><a data-transition="pop" href="#tres">paginas3</a></li>
+				<li><a data-transition="pop" href="#cuatro">paginas4</a></li>
+				<li><a data-transition="pop" href="#cinco">paginas5</a></li>
+			</ul>
+				
+				<br><br><br>
+			<a href="#" data-rel="close" data-role="button">Cerrar</a>
+
+		</div>
+
+	<!-- Fin panel de control -->
+
+		<p>Contenido App</p>
+		<hr>
+		<a data-role="button" href="#contacto" data-rel="dialog">Contacto</a>
+		<center>
+
+			<h2 style="font-family: cursive; color: gold;">Hellow Sexy</h2>
+			<img src="css/images/diamond-3410040_640.png">
+			
+		</center>
+
+		</div>
+	<div data-role="footer" data-position="fixed">
+<!--  Para crear un menú en el footer (div[data-role="navbar"]>ul>li*4>a) -->		
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- Fin página de Inicio -->
+
+
+<!-- Contacto Inicio div[data-role="page"]#contacto>div*3 -->
+
+<div data-role="page" id="contacto" data-title="contacto">
+	<div data-role="header">
+		<h1>Contacto</h1>
+	</div>
+	<div data-role="content">
+		<form action="">
+			Nombre: 
+			<input type="text">
+			Correo:
+			<input type="email">
+			Comentario:
+			<textarea cols="30" rows="10"></textarea>
+			<input type="submit">
+		</form>
+	</div>
+	<div data-role="footer">
+		<p>Cel: 0001800068689, Calle 27 6bn 50</p>
+	</div>
+</div>
+
+<!-- Contacto Final -->
+
+<!-- Misión Inicio -->
+
+<div id="mision" data-theme="b" data-role="page" data-title="mision"> 
+	<div data-role="header">
+		<h1>Misión</h1>
+	</div>
+	<div data-role="content">
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore, doloribus. Nesciunt beatae, error quo laborum nemo blanditiis, amet facere suscipit exercitationem, rerum placeat dolore et. Dolorum nemo, officiis architecto!</p>
+
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- Misión Final -->
+
+
+<!-- Visión Inicio -->
+
+
+<div id="vision" data-theme="b" data-role="page" data-title="vision"> 
+	<div data-role="header">
+		<h1>Visión</h1>
+	</div>
+	<div data-role="content">
+		<!-- ul[data-role="list-view"]>li*4>a[href=#$]>{p$}  El signo de $ es consecutivo (eje: 1,2,3,4 ) -->
+	<ul data-role="list-view">
+		<li><a href="#1">p1</a></li>
+		<li><a href="#2">p2</a></li>
+		<li><a href="#3">p3</a></li>
+		<li><a href="#4">p4</a></li>
+	</ul>
+
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- Visión Fin -->
+
+
+
+<!-- Servicios Inicio -->
+
+<div id="servicios" data-theme="b" data-role="page" data-title="servicios"> 
+	<div data-role="header">
+		<h1>Servicios</h1>
+	</div>
+	<div data-role="content">
+		<!-- Collapsible: Ocultar y mostrar -->
+		<div data-role="collapsible">
+			<h3>Servicios</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sequi nobis soluta dolores, deleniti reprehenderit assumenda delectus, non recusandae eius? Vero veritatis laborum eaque eos quia inventore ipsum voluptate veniam.</p>
+		</div>
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+	
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- Servicios Fin -->
+
+
+<!-- Inicio Página Uno -->
+
+<div id="uno" data-theme="b" data-role="page" data-title="uno"> 
+	<div data-role="header">
+		<a href="#panel" data-role="button" data-icon="bars" class="ui-btn-right"></a>
+		<h1>Página Uno</h1>
+	</div>
+	<div data-role="content">
+
+		<!-- Panel Menú -->
+		<div data-role="panel" data-display="overlay" id="panel" data-position="right">
+					
+					<h3>Menú</h3>
+		
+					<ul data-role="listview">
+						<li><a href="#uno">paginas1</a></li>
+						<li><a href="#dos">paginas2</a></li>
+						<li><a href="#tres">paginas3</a></li>
+						<li><a href="#cuatro">paginas4</a></li>
+						<li><a href="#cinco">paginas5</a></li>
+					</ul>
+						
+						<br><br><br>
+					<a href="#" data-rel="close" data-role="button">Cerrar</a>
+		
+				</div>
+
+		<!-- Fin Panel Menú -->
+
+		<p>Que calor</p>
+		<hr>
+		
+		<center>
+		<h1>Ejemplo Pág Uno</h1>
+		<ul>
+			<li>Buenas</li>
+			<li>Hola</li>
+			<li>Hellow</li>
+			<li>Welcome</li>
+		</ul>
+		</center>
+
+		<img src="css/images/bosque.jpg">
+	
+		</div>
+	<div data-role="footer" data-position="fixed">
+	
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- Fin Página Uno -->
+
+
+
+
+
+<!-- Inicio Página Dos -->
+
+<div id="dos" data-theme="b" data-role="page" data-title="dos"> 
+	<div data-role="header">
+		<a href="#panel" data-role="button" class="ui-btn-right">Menú</a>
+		<h1>Segunda página de ejemplo</h1>
+	</div>
+	<div data-role="content">
+		<div data-role="panel" data-display="overlay" id="panel" data-position="right">
+					
+					<h3>Menú</h3>
+		
+					<ul data-role="listview">
+						<li><a href="#uno">paginas1</a></li>
+						<li><a href="#dos">paginas2</a></li>
+						<li><a href="#tres">paginas3</a></li>
+						<li><a href="#cuatro">paginas4</a></li>
+						<li><a href="#cinco">paginas5</a></li>
+					</ul>
+						
+						<br><br><br>
+					<a href="#" data-rel="close" data-role="button">Cerrar</a>
+		
+				</div>
+
+		<p>Dos 2.0</p>
+		<hr>
+
+		<h1 style="text-align:center">Ejemplo número dos</h1>
+		<a data-role="button" href="#contacto" data-rel="dialog">Contacto</a>
+		<img src="css/images/diamond-3410040_640.png">
+		</div>
+	<div data-role="footer" data-position="fixed">
+	
+	<div data-role="navbar">
+		<ul>
+			<li><a data-transition="flip" data-icon="star" href="#mision">Misión</a></li>
+			<li><a data-transition="pop" data-icon="plus" href="#vision">Visión</a></li>
+			<li><a data-transition="slideup" data-icon="heart" href="#servicios">Servicios</a></li>
+			<li><a data-transition="slidedown" data-icon="home" href="#inicio">Home</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+
+
+<!-- Fin Página Dos -->
+
+<!-- Llamando los scripts -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Finalizando llamado de scripts -->
+
+
+</body>
+</html>
